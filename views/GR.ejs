@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Gamma Ray log display</title>
+    <link rel="stylesheet" href="/assets/main.css">
+  </head>
+  <body>
+
+    <input type="text" name="" value="<%= data.depthArr %>" id="depthArr" hidden>
+
+    <input type="text" name="" value="<%= data.gammaArr %>" id="gammaArr" hidden>
+
+    <!-- <input type="text" name="" value="<%= data.spArr %>" id="spArr" hidden> -->
+
+    <form action="/new" method="post">
+      <p style="text-align:center"><input type="submit" value="New File" class="btn"> <br><br><br><br><br><br><br>
+      <button type="button" name="button" onclick="backh()" class="back-btn">Back to all logs</button></p>
+    </form>
+
+    <div id="gamma-container" id="gamma-container">
+      <div id="gamma"></div>
+    </div>
+
+
+
+    <!-- <button type="button" name="button" onclick="linkTwo()" class="link" id="linkbtn">Link</button> -->
+    <!-- <div id="sp" style="height: 2200px;width:400px;float: right;"></div> -->
+
+    <!-- Latest compiled and minified plotly.js JavaScript -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="/assets/main.js" charset="utf-8"></script>
+  </body>
+</html>
